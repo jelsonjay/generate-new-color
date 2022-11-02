@@ -54,7 +54,7 @@ main {
 	margin: 0 auto;
 	max-width: 100%;
 	width: 70rem;
-	background-color: whitesmoke;
+	background-color: var(--clr-white);
 	margin-top: 1rem;
 	border-radius: var(--border-radius);
 	min-height: 50vh;
