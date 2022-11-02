@@ -1,0 +1,120 @@
+/*======GOOGLE FONT======*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*======REST======*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+
+/*======VARIABLES=======*/
+:root {
+	/*---COLOR---*/
+	--primary: #135592;
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-black: hsl(0, 0%, 0%);
+	--bg: hsl(210, 31%, 80%);
+
+	/*----FONT-----*/
+	--FS: min(2.25rem, 3vh);
+
+	/*----GENERAL---*/
+	--border-radius: 0.5rem;
+	--padding: 1rem;
+	--hover: hsl(300, 82%, 51%);
+	--transition: all 0.3s linear;
+}
+
+/*------GENELA STYLES-----*/
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.6;
+	background: var(--bg);
+	transition: all 0.3s linear;
+}
+
+h1 {
+	color: var(--clr-black);
+	padding: 1rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+section {
+	margin: 0 auto;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 70rem;
+	background-color: whitesmoke;
+	margin-top: 1rem;
+	border-radius: var(--border-radius);
+	min-height: 50vh;
+}
+
+button {
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	border-radius: var(--border-radius);
+	margin: 0.5rem;
+	cursor: pointer;
+	padding: var(--padding);
+	background-color: var(--primary);
+	color: var(--clr-white);
+}
+
+/*==========box===============*/
+.box-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+.box-container .box h3 {
+	padding: 5rem 5rem;
+	transform: translate(-50%-50%);
+	background-color: var(--primary);
+	color: var(--clr-white);
+	border-radius: var(--border-radius);
+}
+.box-container .box {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+/*==========MEDIA QUERY=========*/
+@media (max-width: 768px) {
+	main {
+		padding: 2rem;
+		width: 25rem;
+	}
+	button {
+		font-size: 1rem;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+@media (max-width: 568px) {
+	main {
+		padding: 1rem;
+		width: 21rem;
+	}
+	button {
+		font-size: 0.9rem;
+	}
+	h1 {
+		font-size: 1rem;
+	}
+}
