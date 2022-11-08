@@ -16,7 +16,7 @@
 	--primary: #135592;
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-black: hsl(0, 0%, 0%);
-	--bg: hsl(210, 31%, 80%);
+	--bg: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
 
 	/*----FONT-----*/
 	--FS: min(2.25rem, 3vh);
